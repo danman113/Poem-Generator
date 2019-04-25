@@ -1,4 +1,7 @@
-// Ref https://codereview.stackexchange.com/questions/156874/node-js-automatic-poem-generator
+//---- Instructions ----\\
+// 1: Press Command + A, Command + C (Mac) or Ctrl + A, Ctrl + C (Windows, Linux, Chrome OS)
+// 2: Press Command + Option + J (Mac) or Control + Shift + J (Windows, Linux, Chrome OS)
+// 3: Press Command + V, Enter (Mac) or Ctrl + V, Enter (Windows, Linux, Chrome OS)
 
 const pick = array => array[Math.floor(Math.random() * array.length)]
 const subjects = `I,You,Daniel,Vivian,Bo,Yuki,Jing,Cotton,Vianna,Vivonda,The Stranger,The Liar,Harry Potter,Dumbledore`
@@ -43,4 +46,6 @@ const generatePoem = () => {
   return str + `\n By Daniel Berezin and Vivian Nghiem, ${(new Date()).getFullYear()}`
 }
 
-alert(generatePoem())
+console.log(generatePoem())
+
+// Ref https://codereview.stackexchange.com/questions/156874/node-js-automatic-poem-generator
